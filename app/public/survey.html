@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Page</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/16ee401288.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Survey Questions</h1>
+    <form>
+      <div class="form-group">
+        <label for="nameInput">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Required">
+        <small id="nameHelp" class="form-text text-muted">Come on..you know you want to give us your data.</small>
+      </div>
+      <div class="form-group">
+        <label for="picLink">Link to Your Picture</label>
+        <input type="text" class="form-control" id="pic-link" placeholder="Required">
+        <small id="picHelp" class="form-text text-muted">A pretty one.</small>
+      </div>
+      <div class="form-group">
+        <label for="select1">What temperature do you set the air conditioning?</label>?</label>
+        <select class="form-control" id="select1">
+          <option>1 - Below 68 degrees</option>
+          <option>2 - 70 degrees</option>
+          <option>3 - 72 degrees</option>
+          <option>4 - 74 degrees</option>
+          <option>5 - Above 76 degrees</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select2">How late do you like to stay up?</label>?</label>
+        <select class="form-control" id="select2">
+          <option>1 - 6 pm tops</option>
+          <option>2 - 9 pm</option>
+          <option>3 - Midnight</option>
+          <option>4 - When the bars close</option>
+          <option>5 - Sunrise</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select3">How funny are you?</label>?</label>
+        <select class="form-control" id="select3">
+          <option>1 - Software development jokes only</option>
+          <option>2 - My mom laughs at my jokes</option>
+          <option>3 - Average</option>
+          <option>4 - Average Plus</option>
+          <option>5 - I'm a young Stephen Colbert</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select4">Do you like the outdoors?</label>?</label>
+        <select class="form-control" id="select4">
+          <option>1 - I'm a Lost Boy</option>
+          <option>2 - I'm a ginger</option>
+          <option>3 - Take it or leave it</option>
+          <option>4 - The dog gets a walk every day</option>
+          <option>5 - I climb mountains in my spare time</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select5">How much do you like toast?</label>?</label>
+        <select class="form-control" id="select5">
+          <option>1 - I'm gluten free.  Are you trying to poison me?</option>
+          <option>2 - I haven't ever tried it</option>
+          <option>3 - Toast is only a conduit for more butter</option>
+          <option>4 - Love me some toast</option>
+          <option>5 - I'm British. It's a lifestyle.</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select6">Do you like long walks on the beach?</label>?</label>
+        <select class="form-control" id="select6">
+          <option>1 - They still haven't found my last husband</option>
+          <option>2 - The waves scare me</option>
+          <option>3 - Yes, hold my hand</option>
+          <option>4 - More yes, all the walks on all the beaches</option>
+          <option>5 - Even by myself in the rain</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select7">How much do you like deodorant?</label>?</label>
+        <select class="form-control" id="select7">
+          <option>1 - Never heard of it</option>
+          <option>2 - Au natural</option>
+          <option>3 - Only the natural stuff</option>
+          <option>4 - Even with anti-perspirant!</option>
+          <option>5 - More Ax Body Spray NOW!</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select8">Do you like learning?</label>?</label>
+        <select class="form-control" id="select8">
+          <option>1 - I can wrestle an alligator</option>
+          <option>2 - I can read better than my 4 year old!</option>
+          <option>3 - I read for fun</option>
+          <option>4 - Yes!</option>
+          <option>5 - I went back to school after retirement...twice</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select9">What is the path to enlightenment?</label>?</label>
+        <select class="form-control" id="select9">
+          <option>1 - Doritos (Nacho Cheese)</option>
+          <option>2 - Doritos (Cool Ranch)</option>
+          <option>3 - Meditation</option>
+          <option>4 - Church</option>
+          <option>5 - Would you like to join my cult?  It's super cool!</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="select10">Who is your favorite TA?</label>?</label>
+        <select class="form-control" id="select10">
+          <option>1 - Justin</option>
+          <option>2 - Alan</option>
+          <option>3 - Haffed</option>
+          <option>4 - Austin</option>
+          <option>5 - Shane (LOL)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Your New Friend is: </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="friend-photo">
+          <h2 id="friend-name"></h2>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+  // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+  // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+  var newFriend = {};
+
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+    // console.log("Submit clicked!");
+
+    // Here we grab the form elements
+    var newSurvey = {
+      name: $("#name").val().trim(),
+      photo: $("#pic-link").val().trim(),
+      scores: [parseInt($("#select1").val().charAt(0)), parseInt($("#select2").val().charAt(0)), parseInt($("#select3").val().charAt(0)), parseInt($("#select4").val().charAt(0)), parseInt($("#select5").val().charAt(0)), parseInt($("#select6").val().charAt(0)), parseInt($("#select7").val().charAt(0)), parseInt($("#select8").val().charAt(0)), parseInt($("#select9").val().charAt(0)), parseInt($("#select10").val().charAt(0))]
+    };
+
+    console.log(newSurvey);
+
+    // This line is the magic. It"s very similar to the standard ajax function we used.
+    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+    // depending on if a tables is available or not.
+
+    $.post("/api/friends", newSurvey,
+      function (data) {
+
+        // console.log("Yay! Data Submitted!");
+        // console.log(newSurvey);
+
+        // Clear the form when submitting
+        $("#name").val("");
+        $("#pic-link").val("");
+        $("#select1").val("");
+        $("#select2").val("");
+        $("#select3").val("");
+        $("#select4").val("");
+        $("#select5").val("");
+        $("#select6").val("");
+        $("#select7").val("");
+        $("#select8").val("");
+        $("#select9").val("");
+        $("#select10").val("");
+
+        console.log(data);
+        $('#friend-name').text(data.name);
+        $('#friend-photo').attr("src", data.photo);
+        $('#friend-photo').attr("width", "200px");
+        $('.modal').modal('show');
+
+      });
+
+    // console.log("Adding data to modal");
+    // console.log(newFriend.name);  
+  });
+
+
+</script>
